@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="rageZone">
+            {{front[3].short}}
+        </div>
+    </div>
+</div>
+<div class="row homeSections">
+    <div class="col-md-12">
+        <div class="col-md-8 article1" ng-click="goToArticle(front[0].id)">
+            <div class="panel" ng-class="getPanelClass(front[0].section)">
+                <div class="panel-heading articleHeader">
+                    <h1 class="panel-title">{{front[0].title}}</h1>
+                    <span class="author">{{"- écrit par " + front[0].author}}</span>
+                </div>
+                <div class="panel-body" style="font-size: 18px">
+                    <div class="text-center"><img ng-src="{{front[0].thumbnail}}" style="max-height: 300px; margin-bottom: 20px"></div>
+                    {{front[0].short}}
+                </div>
+                <div class="panel-footer" ng-style="getPanelColor(front[0].section)">
+                    <div class="pull-right date">
+                        {{front[0].date.split(" ")[0]}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="article2" ng-click="goToArticle(front[1].id)">
+                <div class="panel" ng-class="getPanelClass(front[1].section)">
+                    <div class="panel-heading articleHeader">
+                        <h1 class="panel-title">{{front[1].title}}</h1>
+                    </div>
+                    <div class="panel-body">
+                        {{front[1].short}}
+                    </div>
+                    <div class="panel-footer" ng-style="getPanelColor(front[1].section)">
+                        <div class="pull-right date">
+                            {{front[1].date.split(" ")[0]}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article3" ng-click="goToArticle(front[2].id)">
+                <div class="panel" ng-class="getPanelClass(front[2].section)">
+                    <div class="panel-heading articleHeader">
+                        <h1 class="panel-title">{{front[2].title}}</h1>
+                    </div>
+                    <div class="panel-body">
+                        {{front[2].short}}
+                    </div>
+                    <div class="panel-footer" ng-style="getPanelColor(front[2].section)">
+                        <div class="pull-right date">
+                            {{front[2].date.split(" ")[0]}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

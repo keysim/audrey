@@ -1,0 +1,24 @@
+    <script src="../controllers/articles.js"></script>
+<div class="row" ng-repeat="article in articles">
+    <div class="panel_article" ng-click="goToArticle(article.id)">
+        <div class="panel_left img-thumbnail">
+            <img src="assets/img/default.png" alt="panel_img" ng-src="{{article.thumbnail}}" onerror="this.src='assets/img/default.png'">
+        </div>
+        <div class="panel_right">
+            <div class="panel" ng-class="getPanelClass(article.section)">
+                <div class="panel-heading articleHeader">
+                    <h1 class="panel-title">{{article.title}}</h1>
+                    <span class="author">{{article.author ? "- écrit par " + article.author : ""}}</span>
+                </div>
+                <div class="panel-body">
+                    {{article.short}}
+                </div>
+                <div class="panel-footer" ng-style="getPanelColor(article.section)">
+                    <div class="pull-right date">
+                        {{article.date.split(" ")[0]}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

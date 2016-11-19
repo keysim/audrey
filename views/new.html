@@ -1,0 +1,76 @@
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 text-center">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default" ng-class="{currSec:article.section=='news'}" ng-click="setSection('news')"><i class="fa fa-newspaper-o fa-3x"></i></button>
+            <button type="button" class="btn btn-default" ng-class="{currSec:article.section=='old'}" ng-click="setSection('old')"><i class="fa fa-history fa-3x"></i></button>
+            <button type="button" class="btn btn-default" ng-class="{currSec:article.section=='various'}" ng-click="setSection('various')"><i class="fa fa-coffee fa-3x"></i></button>
+            <button type="button" class="btn btn-default" ng-class="{currSec:article.section=='inOut'}" ng-click="setSection('inOut')"><i class="fa fa-heartbeat fa-3x"></i></button>
+            <button type="button" class="btn btn-default" ng-class="{currSec:article.section=='videos'}" ng-click="setSection('videos')"><i class="fa fa-video-camera fa-3x"></i></button>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <button type="button" ng-click="del()" class="btn btn-danger btn-lg btn-block">
+            Supprimer
+        </button>
+    </div>
+</div>
+<div class="row"><br></div>
+<div class="row" ng-controller="TinyMceController">
+    <div class="col-md-12">
+        <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel">test</textarea>
+    </div>
+</div>
+<div class="row"><br></div>
+<div class="row">
+    <div class="panel_article panel_edit">
+        <div class="panel_left" ng-controller="uploadCtrl">
+            <label for="file_input">
+                <img src="assets/img/default.png" alt="panel_img" class="img-thumbnail" ng-src="{{$parent.article.thumbnail}}" onerror="this.src='assets/img/default.png'">
+            </label>
+            <input id="file_input" type="file" ng-click="setLoader()" ngf-select="uploadFiles($file, $invalidFiles)"
+                   accept="image/*" ngf-max-height="1900" ngf-max-size="5MB">
+        </div>
+        <div class="panel_right">
+            <div class="panel" ng-class="getCurrPanel()">
+                <div class="panel-heading articleHeader">
+                    <input id="title" ng-model="article.title" type="text" class="form-control input-large panel-title" placeholder="Titre...">
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" id="short" ng-model="article.short" maxlength="700" placeholder="Résumé..."></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Paramètres</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <select name="type" class="form-control" ng-model="article.position">
+                            <option value="hide">Ne pas poster</option>
+                            <option value="normal">Poster</option>
+                            <option value="first">Poster en premier</option>
+                            <option value="second">Poster en second</option>
+                            <option value="third">Poster en troisième</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-9">
+    </div>
+    <div class="col-md-3">
+        <button type="button" ng-click="save.func()" class="btn btn-primary btn-block btn-lg">{{save.text}}
+            <div class="loader" ng-hide="save.text"></div>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="article edges" ng-style="getColor(article.section)">
+    <button ng-show="login" ng-click="goEditArticle(article.id)" class="btn btn-primary pull-right">Éditer</button>
+    <h1>{{article.title}}</h1>
+    <hr class="hr_article">
+    <div ng-bind-html="article.content | to_trusted"></div>
+</div>

@@ -1,0 +1,21 @@
+.valid {
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    position: absolute;
+    font-size: 1em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.preValid {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.postValid {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
