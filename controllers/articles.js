@@ -195,10 +195,10 @@ mainApp.controller('newArticleCtrl', function($scope, $http, $timeout, $routePar
             });
     };
     $scope.del = function() {
-        var urlDel = apiUrl + "article/" + $routeParams.articleId + "?token=" + $cookies.get("token");
-        $http.post(urlDel, $.param({"del" : true}), postConfig)
+        //var urlDel = apiUrl + "article/" + $routeParams.articleId + "?token=" + $cookies.get("token");
+        $http.post(url, $.param({"del" : true}), postConfig)
             .then(function(response) {
-                $location.path('.');
+                $location.path('/');
                 console.log(response.data);
             });
     };
