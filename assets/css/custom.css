@@ -524,6 +524,9 @@ html, body { height: 100%; }
     vertical-align: top;
 }
 
- .navbar-default {
+.navbar-default {
     text-align: center;
+}
+.navbar-right {
+    margin-right: 0;
 }
