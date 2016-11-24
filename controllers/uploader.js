@@ -15,7 +15,7 @@ mainApp.controller('uploadCtrl', function($scope, $http, $cookies, Upload) {
                 });*/
                 $scope.loader = false;
                 if(response.data.path){
-                    $scope.$parent.article.thumbnail = response.data.path;
+                    $scope.$parent.article.thumbnail = response.data.thumbnail;
                 }
                 console.log(response.data);
             });
