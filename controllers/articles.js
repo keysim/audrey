@@ -197,8 +197,8 @@ mainApp.controller('newArticleCtrl', function($scope, $http, $timeout, $routePar
             });
     };
     $scope.del = function() {
-        //var urlDel = apiUrl + "article/" + $routeParams.articleId + "?token=" + $cookies.get("token");
-        $http.post(url, $.param({"del" : true}), postConfig)
+        //var urlDel = apiUrl + "article/delete/" + $routeParams.articleId + "?token=" + $cookies.get("token");
+        $http.delete(url)
             .then(function(response) {
                 $location.path('/');
                 console.log(response.data);
