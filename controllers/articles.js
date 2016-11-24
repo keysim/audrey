@@ -59,7 +59,8 @@ mainApp.controller('homeCtrl', function($scope, $http, $location, $uibModal, $co
             return {"background-color":secToCol[section].foot};
     };
     $scope.goToArticle = function (id) {
-        $location.path('article/'+id);
+        if(id)
+            $location.path('article/'+id);
     };
 });
 
@@ -90,7 +91,8 @@ mainApp.controller('articleCtrl', function($scope, $http, $location, $routeParam
         return {"background-color":secToCol[section].foot};
     };
     $scope.goToArticle = function (id) {
-        $location.path('article/'+id);
+        if(id)
+            $location.path('article/'+id);
     };
 });
 
