@@ -26,8 +26,8 @@ mainApp.controller('headerController', function($rootScope, $scope, $location, $
     $scope.disconnect = function() {
         if($cookies.get("login")){
             console.log("LOGIN DELETED");
-            $cookies.remove("token", { path: '/audrey/' });
-            $cookies.remove("login", { path: '/audrey/' });
+            $cookies.remove("token", { path: '/' });
+            $cookies.remove("login", { path: '/' });
         }
         $window.location.href = "login";
     };
