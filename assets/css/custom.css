@@ -44,14 +44,14 @@
     padding-top: 0;
     padding-bottom: 0;
     max-height: 300px;
-    margin: 0 -10%;
+    /*margin: 0 -10%;*/
     overflow: hidden;
     transition: max-height .2s ease-out;
 }
 
 .banner img{
     width: 100%;
-    margin-top: -100px;
+    margin-top: -12%;
     transition: margin-top .2s ease-out;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .navbar-default{
-    margin: 0 -10%;
+    /*margin: 0 -10%;*/
     margin-bottom: 2%;
     background-image: url(../img/back_nav.jpg);
     border-color: rgb(107,107,107);
@@ -516,4 +516,14 @@ html, body { height: 100%; }
 
 .disconnect {
     margin-right: 15px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+ .navbar-default {
+    text-align: center;
 }

@@ -1,20 +1,18 @@
-<div class="container">
-    <a href="."><div class="banner">
-        <img src="assets/img/banner.jpg">
-    </div></a>
-    <nav class="navbar navbar-default">
-        <ul id="myNav" class="nav navbar-nav">
-            <li><a ng-style="getBack('/home')" class="brand" href="."  popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="700" uib-popover="Ceci est une maison"><i class="fa fa-home"></i></a></li>
-            <li><a ng-style="getBack('news')" href="news" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="On en a deux mots à dire."><i class="fa fa-newspaper-o"></i> Actualité</a></li>
-            <li><a ng-style="getBack('old')" href="old" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="Revenons-en. Reparlons-en."><i class="fa fa-history"></i> Jadis</a></li>
-            <li><a ng-style="getBack('various')" href="various" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="Expériences personnelles à partager."><i class="fa fa-coffee"></i> Faits divers</a></li>
-            <li><a ng-style="getBack('inOut')" href="inOut" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="Coup de coeur ou coup de gueule ?"><i class="fa fa-heartbeat"></i> In / Out</a></li>
-            <li><a ng-style="getBack('videos')" href="videos" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="Reportages à notre façon."><i class="fa fa-video-camera"></i> J&T</a></li>
-            <li><a ng-style="getBack('/us')" href="us" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="Qui derrière tout ça ?"><i class="fa fa-hand-peace-o"></i> Nous</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="new" ng-show="login"><i class="fa fa-plus fa-lg"></i></a></li>
-            <li><a ng-click="disconnect()" ng-show="login" class="disconnect">Log as {{login}} <i class="fa fa-user fa-lg"></i></a></li>
-        </ul>
-    </nav>
-</div>
+<a href="."><div class="banner">
+    <img src="assets/img/banner.jpg">
+</div></a>
+<nav class="navbar navbar-default">
+    <ul id="myNav" class="nav navbar-nav">
+        <li><a ng-style="getBack('/home')" class="brand" href="."  popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="700" uib-popover="Ceci est une maison"><i class="fa fa-home"></i></a></li>
+        <li><a ng-style="getBack('news')" href="news" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="On en a deux mots à dire."><i class="fa fa-newspaper-o"></i> Actualité</a></li>
+        <li><a ng-style="getBack('old')" href="old" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="Revenons-en. Reparlons-en."><i class="fa fa-history"></i> Jadis</a></li>
+        <li><a ng-style="getBack('various')" href="various" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="Expériences personnelles à partager."><i class="fa fa-coffee"></i> Faits divers</a></li>
+        <li><a ng-style="getBack('inOut')" href="inOut" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="Coup de coeur ou coup de gueule ?"><i class="fa fa-heartbeat"></i> In / Out</a></li>
+        <li><a ng-style="getBack('videos')" href="videos" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="Reportages à notre façon."><i class="fa fa-video-camera"></i> J&T</a></li>
+        <li><a ng-style="getBack('/us')" href="us" popover-append-to-body='true' popover-placement="top" popover-trigger="mouseenter" popover-popup-delay="400" uib-popover="Qui derrière tout ça ?"><i class="fa fa-hand-peace-o"></i> Nous</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="new" ng-show="login"><i class="fa fa-plus fa-lg"></i></a></li>
+        <li><a ng-click="disconnect()" ng-show="login" class="disconnect">Log as {{login}} <i class="fa fa-user fa-lg"></i></a></li>
+    </ul>
+</nav>
