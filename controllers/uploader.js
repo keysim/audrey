@@ -27,3 +27,17 @@ mainApp.controller('uploadCtrl', function($scope, $http, $cookies, Upload) {
         $scope.loader = true;
     };
 });
+
+mainApp.controller('uploadFilesCtrl', ['$scope', 'FileUploader', '$cookies', function($scope, FileUploader, $cookies) {
+    var uploader = $scope.uploader = new FileUploader({
+        url: 'http://92.222.72.189:3000/api/upload' + "?token=" + $cookies.get("token"),
+        alias: "img"
+    });
+
+    uploader.onSuccessItem = function(fileItem, response, status, headers) {
+        console.info('Response : ', response);
+        fileItem.file.name = response.path;
+    };
+
+    console.info('uploader', uploader);
+}]);

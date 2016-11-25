@@ -1,4 +1,4 @@
-var mainApp = angular.module("mainApp", ['ngRoute', 'ui.tinymce', 'ngFileUpload', 'ui.bootstrap', 'ui.bootstrap.tooltip', 'ui.bootstrap.modal', 'ngCookies']);
+var mainApp = angular.module("mainApp", ['ngRoute', 'ui.tinymce', 'ngFileUpload', 'ui.bootstrap', 'ui.bootstrap.tooltip', 'ui.bootstrap.modal', 'ngCookies', 'angularFileUpload']);
 var apiUrl = "http://lewogona.com:3000/api/";
 var postConfig = {headers : {'Content-Type': 'application/x-www-form-urlencoded'}}; //;charset=utf-8;
 

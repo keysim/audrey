@@ -34,11 +34,9 @@ mainApp.controller('homeCtrl', function($scope, $http, $location, $uibModal, $co
     var urlList = apiUrl + "articles";
     $http.get(urlList)
         .then(function(response) {
-            console.log(response.data);
             var articles = response.data;
             if(articles.length > 0) {
                 for(var key in articles) {
-                    console.log(articles[key]);
                     if (articles[key].position == "first")
                         $scope.front[0] = articles[key];
                     else if(articles[key].position == "second")
@@ -74,7 +72,6 @@ mainApp.controller('articleCtrl', function($scope, $http, $location, $routeParam
         urlList += "?token=" + $cookies.get("token");
     $http.get(urlList)
         .then(function(response) {
-            console.log(response.data);
             if(response.data.length > 0)
                 $scope.articles = response.data;
             else
@@ -99,10 +96,8 @@ mainApp.controller('articleCtrl', function($scope, $http, $location, $routeParam
 mainApp.controller('detailArticleCtrl', function($scope, $http, $location, $routeParams) {
     if($routeParams.articleId){
         var urlDetail = apiUrl + "article/" + $routeParams.articleId;
-        console.log("GET : ", urlDetail);
         $http.get(urlDetail)
             .then(function(response) {
-                console.log(response.data);
                 if(response.data && response.data.author) //response.data.posted == "1"
                     $scope.article = response.data;
                 else
@@ -116,7 +111,6 @@ mainApp.controller('detailArticleCtrl', function($scope, $http, $location, $rout
         }
     }
     $scope.goEditArticle = function (id) {
-        console.log('article/edit/'+id);
         $location.path('article/edit/'+id);
     };
     $scope.article = {title:"Chargement..."};
@@ -176,7 +170,6 @@ mainApp.controller('newArticleCtrl', function($scope, $http, $timeout, $routePar
                 .then(function(response) {
                     if(response.data && response.data.author){
                         $scope.article = response.data;
-                        console.log($scope.article);
                         tinyMCE.activeEditor.setContent($scope.article.content);
                     }
                 });
