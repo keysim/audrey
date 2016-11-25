@@ -43,7 +43,7 @@ mainApp.controller('homeCtrl', function($scope, $http, $location, $uibModal, $co
                         $scope.front[1] = articles[key];
                     else if(articles[key].position == "third")
                         $scope.front[2] = articles[key];
-                    else if(articles[key].position == "second")
+                    else if(articles[key].position == "heart" || articles[key].position == "rage")
                         $scope.front[3] = articles[key];
                 }
             }

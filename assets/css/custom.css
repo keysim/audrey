@@ -266,6 +266,10 @@
     margin-bottom: 0;
 }
 
+.rageZone {
+    cursor: pointer;
+}
+
 .homeSections {
     margin-bottom: 2%;
 }
@@ -273,7 +277,7 @@
 .rageZone {
     border-color: rgb(180,180,180);
     border-style: groove;
-    border-width: 3px;
+    border-width: 2px;
     background-color: white;
     padding: 1%;
     max-height: 80px;
@@ -533,4 +537,27 @@ html, body { height: 100%; }
 
 .uploadButton {
     margin: 0 0 -63px 0;
+}
+
+.heart div{
+    min-height: 42px;
+}
+
+.heart span{
+    position: absolute;
+    color: #da4453;
+    margin-left: -28px;
+    margin-top: -10px;
+}
+
+.heart div {
+    background-color: white;
+    color: #000000;
+    height: initial;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+.heart {
+    display: initial;
 }

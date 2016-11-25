@@ -1,11 +1,15 @@
 <div class="row" ng-show="front[3]">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-        <div class="rageZone">
-            {{front[3].short}}
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="input-group heart">
+            <span><i class="fa fa-4x" ng-class="front[3].position == 'rage' ? 'fa-heartbeat' : 'fa-heart'"></i></span>
+            <div class="form-control rageZone" ng-click="goToArticle(front[3].id)">
+                {{front[3].short}}
+            </div>
         </div>
     </div>
 </div>
+<br>
 <div class="row homeSections">
     <div class="col-md-12">
         <div class="col-md-8 article1" ng-click="goToArticle(front[0].id)">
