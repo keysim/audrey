@@ -38,6 +38,4 @@ mainApp.controller('uploadFilesCtrl', ['$scope', 'FileUploader', '$cookies', fun
         console.info('Response : ', response);
         fileItem.file.name = response.path;
     };
-
-    console.info('uploader', uploader);
 }]);
