@@ -511,11 +511,6 @@ html, body { height: 100%; }
     width: 100px;
 }
 
-
-.disconnect {
-    margin-right: 15px;
-}
-
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
