@@ -189,6 +189,12 @@
     font-style: italic;
 }
 
+.authorDetail {
+    float: right;
+    font-size: 24px;
+    font-style: italic;
+}
+
 .edges{
     border-style: groove;
     border-width: 3px;
@@ -496,14 +502,6 @@ html, body { height: 100%; }
     font-weight: bold;
     margin: 0;
     margin-bottom: 20px;
-}
-
-.author {
-    top: 12px;
-    position: absolute;
-    right: 24px;
-    font-size: 20px;
-    font-style: italic;
 }
 
 .chibi_footer {
