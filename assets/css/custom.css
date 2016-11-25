@@ -286,7 +286,7 @@ html, body { height: 100%; }
 body {
     font-family: "Georgia", "Palatino", "Times New Roman", "Times", sans-serif;
     background-attachment: fixed;
-    background-image: radial-gradient(#ACACC4, #D2D2EF);
+    background-image: radial-gradient(#bec5cb, #FFFFFF);
 }
 
 /* ------ MODAL ------ */
