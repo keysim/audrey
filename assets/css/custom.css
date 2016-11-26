@@ -565,3 +565,13 @@ html, body { height: 100%; }
 .hideEye {
     margin-right: -20px;
 }
+
+.fa-calendar-check-o {
+    color: #8cc152;
+    cursor: pointer;
+}
+
+.fa-calendar-times-o {
+    color : #da4453;
+    cursor: pointer;
+}

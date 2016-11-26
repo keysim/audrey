@@ -125,7 +125,8 @@ mainApp.controller('newArticleCtrl', function($scope, $http, $timeout, $routePar
         short : "",
         thumbnail : "",
         author : $cookies.get("login"),
-        position : "hide"
+        position : "hide",
+        setDate : false
     };
     $scope.save = {
         animation: false,
