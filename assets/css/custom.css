@@ -246,7 +246,7 @@
 .article2 {
     min-height: 325px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .article2>div{
@@ -258,7 +258,7 @@
     min-height: 210px;
     margin-top: 15px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .article3>div{
