@@ -561,3 +561,7 @@ html, body { height: 100%; }
 .heart {
     display: initial;
 }
+
+.hideEye {
+    margin-right: -20px;
+}

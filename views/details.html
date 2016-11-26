@@ -3,5 +3,5 @@
     <h1>{{article.title}}</h1>
     <hr class="hr_article">
     <div ng-bind-html="article.content | to_trusted"></div>
-    <span class="authorDetail">{{article.author ? "- écrit par " + article.author : ""}}</span>
+    <span class="authorDetail">{{article.author ? "- " + article.author : ""}}</span>
 </div>

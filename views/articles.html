@@ -8,7 +8,7 @@
             <div class="panel" ng-class="getPanelClass(article.section)">
                 <div class="panel-heading articleHeader">
                     <h1 class="panel-title">{{article.title}}</h1>
-                    <span class="author">{{article.author ? "- " + article.author : ""}}</span>
+                    <span class="author">{{article.author ? "- " + article.author : ""}} <i ng-show="article.position=='hide'" class="fa fa-eye-slash hideEye" aria-hidden="true"></i></span>
                 </div>
                 <div class="panel-body">
                     {{article.short}}
