@@ -556,6 +556,7 @@ html, body { height: 100%; }
     height: initial;
     overflow: hidden;
     opacity: 0.9;
+    font-size: 17px;
 }
 
 .heart {
